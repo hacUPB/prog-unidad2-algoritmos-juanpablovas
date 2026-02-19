@@ -154,12 +154,39 @@ Binario
 
 ## Ejercicios Finales
 
-1. Explica, en tus propias palabras, por qué es necesario que las computadoras representen los datos en binario.
+1) Explica, en tus propias palabras, por qué es necesario que las computadoras representen los datos en binario.
 
-2. Convierte el número binario 10011011 a decimal y a hexadecimal.
+*Solución:*  
+Las computadoras representan los datos en binario, debido a que la fisica detrás de ello es la electricidad, el control del flujo electrico por medio de transistores permiten la posibilidad de tener estados. Además, esta naturaleza permite emplear la información y los datos en cualquier lugar del mundo.
 
-3. Investiga y describe cómo se representa una imagen en formato PNG en el disco.
+2) Convierte el número binario 10011011 a decimal y a hexadecimal.
+
+*Solución:*  
+10011011 ------> Decimal
+
+|$2^{8}$|$2^{7}$|$2^{6}$|$2^{5}$|$2^{4}$|$2^{3}$|$2^{2}$|$2^{1}$|$2^{0}$|
+|-|-|-|-|-|-|-|-|-|
+|256|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|-|
+|0|1|0|0|1|1|0|1|1|  
+  
+
+10011011 = 128 + 16 + 8 +2 + 1
+10011011 = 155
+
+10011011 ------> Hexadecimal  
+Se divide en grupos de 4 bits  
+1001(9) 1011(B)  
+  
+10011011 = 9B  
+
+3) Investiga y describe cómo se representa una imagen en formato PNG en el disco.  
+*Solución:*    
+Un archivo PNG (Portable Network Graphics) se representa en el disco como un archivo binario estructurado en bloques llamados chunks. Comienza con una firma fija de 8 bytes que identifica el formato, seguida de bloques organizados que contienen la información de la imagen. El primero es IHDR, donde se almacenan datos esenciales como ancho, alto, profundidad de bits y tipo de color. Luego aparecen uno o varios bloques IDAT, que contienen los datos reales de los píxeles, y finalmente el bloque IEND, que marca el final del archivo. Cada bloque incluye longitud, tipo, datos y un código CRC para verificación de integridad.
 
 4. Analiza la siguiente situación: ¿Qué sucede si intentas almacenar un número mayor al que puede representar un byte (por ejemplo, 300)? ¿Cómo lo maneja Python?
+
+*Solución:*  
+Un byte puede representar valores entre 0 y 255. Si se intenta almacenar un número mayor, como 300, en un solo byte, no cabe porque excede ese rango, se tendria que usar un byte. 
 
     
