@@ -13,7 +13,6 @@
     
       Aqui tenemos el codigo ASCII:  
 
-      Imagen ()
     - Unicode: Nos permite representar más simbolos y alfabetos
 
 - **Imágenes:** Se presentan por medio de matrices de píxeles, representados por valores numéricos (colores RGB). Los colores se pueden representar en sistema Hexagesimal, HTML, entre otros.
